@@ -1,11 +1,28 @@
 /* eslint-disable no-console */
 import esbuild from 'esbuild';
+import fs from 'fs';
+import path from 'path';
+
+function getAllFilesInDirectory(directory) {
+  const array = [];
+  const files = fs.readdirSync(directory);
+  for (const file of files) {
+    const fullPath = path.resolve(directory, file);
+    if (fs.lstatSync(fullPath).isDirectory()) {
+      array.push(...getAllFilesInDirectory(fullPath));
+    } else {
+      array.push(fullPath);
+    }
+  }
+  return array;
+}
 
 const buildDirectory = 'dist';
 const production = process.env.NODE_ENV === 'production';
 
 // Config entrypoint files
-const entryPoints = ['src/index.ts'];
+const allFiles = getAllFilesInDirectory('src/pages');
+const entryPoints = allFiles.filter((f) => ['.js', '.ts', '.css'].includes(path.extname(f)));
 
 /**
  * Default Settings
