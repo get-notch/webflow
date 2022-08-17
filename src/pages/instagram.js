@@ -146,3 +146,5 @@ posts.each(function (index) {
 
   tl.play(index * delayDiff);
 });
+
+console.log('i have changed')
