@@ -5,7 +5,7 @@ function switchItem() {
   let prevItem = $('.phone-wrapper.active');
   prevItem.removeClass('active');
   let nextItem = prevItem.next();
-  if (prevItem.next().length == 0) {
+  if (prevItem.next().length === 0) {
     nextItem = $('.phone-wrapper').eq(0);
   }
   nextItem.addClass('active');

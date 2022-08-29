@@ -1,9 +1,5 @@
 //Homepage Accordion
 
-function isWidthUnderPx(threshold) {
-  return window.matchMedia(`(max-width: ${threshold}px)`).matches;
-}
-
 const elements = ['.is--creators', '.is--shopers', '.is--nfts', '.is--gamers'];
 const openedSelectors = ['shopers-opened', 'nfts-opened', 'gamers-opened', 'creators-opened'];
 
