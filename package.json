@@ -27,7 +27,7 @@
     "build": "cross-env NODE_ENV=production node ./bin/build.js",
     "lint": "eslint --ignore-path .gitignore ./src && prettier --check ./src",
     "check": "tsc --noEmit",
-    "format": "prettier --write ./src",
+    "format": "eslint --fix ./src && prettier --write ./src",
     "test": "pnpm playwright test",
     "test:headed": "pnpm playwright test --headed",
     "release": "changeset publish",
