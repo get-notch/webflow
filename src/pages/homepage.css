@@ -1,13 +1,15 @@
 @media screen and (max-width: 479px) {
-    .vertical-text.is--creators.creators-opened, .vertical-text.is--white.gamers-opened, .vertical-text.is--white.is--nfts.nfts-opened {
-        display: block !important;
-    }
+  .vertical-text.is--creators.creators-opened,
+  .vertical-text.is--white.gamers-opened,
+  .vertical-text.is--white.is--nfts.nfts-opened {
+    display: block !important;
+  }
 }
 
 .splide__arrow {
-    display: none;
+  display: none;
 }
 
 .bubbles_marquee_track {
-    will-change: transform;
+  will-change: transform;
 }

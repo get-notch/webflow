@@ -6,6 +6,6 @@
     "paths": {
       "$utils/*": ["src/utils/*"]
     },
-    "files": ["global.d.ts"],
+    "files": ["global.d.ts"]
   }
 }

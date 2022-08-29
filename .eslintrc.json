@@ -1,4 +1,3 @@
 {
-  "extends": ["@finsweet"],
-  "ignorePatterns": ["dist/", ".eslintrc.js", "*.css"] // Avoid linting on the dist folder and, ironically, this file too
+  "extends": ["@finsweet"]
 }
