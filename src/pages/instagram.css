@@ -1,4 +1,45 @@
-/* Posts Glitch */
+* {
+    color:red
+}
+
+@media only screen and (min-width: 479px){
+
+    .splide__track {
+        overflow: visible;
+    }
+
+    .splide__slide.is--insta.is-active {
+        transform: scale(1.1);
+    }
+
+    .splide__slide.is-active .bubble-image, .splide__slide.is-next .bubble-image, .splide__slide.is-prev .bubble-image {
+        opacity: 1;
+        transform: translate(0px, 0rem);
+    }
+}
+
+@media only screen and (max-width: 478px){
+    .splide__slide.is-active .bubble-image {
+        opacity: 1;
+        transform: translate(0px, 0rem);
+    }
+}
+
+/* FAQ Filters no horizontal scrollbar */
+
+
+.insta-faq-filters_component::-webkit-scrollbar{
+    display: none;
+}
+
+.insta-faq-filters_component {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+    /* Posts Glitch */
 
 :root {
     --color-text: #fff;
@@ -57,7 +98,7 @@
 }
 
 .glitch .glitch__item.is--1 {
-    background: url("https://uploads-ssl.webflow.com/61878fa5ae899b3d02d58201/62a5b45650491544bb006250_Insta%20Post.png");
+    background: url("https://uploads-ssl.webflow.com/61878fa5ae899b3d02d58201/62fcb6d147f44889d304be95_5.webp");
     background-position: 50% 0%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -69,7 +110,7 @@
 }
 
 .glitch .glitch__item.is--2 {
-    background: url("https://uploads-ssl.webflow.com/61878fa5ae899b3d02d58201/62a5b455a3f817b11c05112a_Insta%20Post-5.png");
+    background: url("https://uploads-ssl.webflow.com/61878fa5ae899b3d02d58201/62fcb6d14544ed82262b6387_6.webp");
     background-position: 50% 0%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -81,7 +122,7 @@
 }
 
 .glitch .glitch__item.is--3 {
-    background: url("https://uploads-ssl.webflow.com/61878fa5ae899b3d02d58201/62a5b456770675fcb7d87dbe_Insta%20Post-3.png");
+    background: url("https://uploads-ssl.webflow.com/61878fa5ae899b3d02d58201/62fcb6d081de9f4a41b13068_4.webp");
     background-position: 50% 0%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -93,7 +134,7 @@
 }
 
 .glitch .glitch__item.is--4 {
-    background: url("https://uploads-ssl.webflow.com/61878fa5ae899b3d02d58201/62a5b456a8f8d8571a20d50c_Insta%20Post-2.png");
+    background: url("https://uploads-ssl.webflow.com/61878fa5ae899b3d02d58201/62fcb6d1baea0e812d2f8680_3.webp");
     background-position: 50% 0%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -105,7 +146,7 @@
 }
 
 .glitch .glitch__item.is--5 {
-    background: url("https://uploads-ssl.webflow.com/61878fa5ae899b3d02d58201/62a5b45721acef6fca2f3c6a_Insta%20Post-4.png");
+    background: url("https://uploads-ssl.webflow.com/61878fa5ae899b3d02d58201/62fcb6d097ed4e5d349d6799_2.webp");
     background-position: 50% 0%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -147,7 +188,7 @@
     0%,
     5% {
         opacity: 0.2;
-        transform: translate3d(var(--glitch-horizontal), var(--glitch-height), 0);
+        transform: translate3d(var(--gap-horizontal), var(--glitch-height), 0);
     }
     5.5%,
     100% {
