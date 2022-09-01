@@ -1,3 +1,5 @@
+console.log('yo yo');
+
 //Homepage Accordion
 
 const elements = ['.is--creators', '.is--shopers', '.is--nfts', '.is--gamers'];
@@ -96,6 +98,24 @@ $('.bubble-collection-item').on('mouseenter', function () {
 $('.bubble-collection-item').on('mouseleave', function () {
   $(this).siblings('.bubble-collection-item').css('opacity', '100%');
 });
+
+// Who is it for section random faces
+let faces = document.querySelectorAll('.face-image_img');
+
+for (let i = 0; i < faces.length; i++) {
+  TweenMax.from(faces[i], randomNumber(2, 2), {
+    opacity: 0,
+    yoyo: true,
+    delay: randomNumber(1, 3),
+    repeatDelay: randomNumber(10, 2),
+    repeat: -1,
+    ease: Linear.easeNone,
+  });
+}
+
+function randomNumber(min, max) {
+  return Math.random() * (max - min) + min;
+}
 
 // new Splide('.bubbles_wrapper', {
 //   autoScroll: {
