@@ -102,54 +102,17 @@ $('.bubble-collection-item').on('mouseleave', function () {
 // Who is it for section random faces
 let faces = document.querySelectorAll('.face-image_img');
 
-for (let i = 0; i < faces.length; i++) {
-  TweenMax.from(faces[i], randomNumber(2, 2), {
-    opacity: 0,
-    yoyo: true,
-    delay: randomNumber(1, 3),
-    repeatDelay: randomNumber(10, 2),
-    repeat: -1,
-    ease: Linear.easeNone,
-  });
-}
-
 function randomNumber(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-// new Splide('.bubbles_wrapper', {
-//   autoScroll: {
-//     speed: 2,
-//     pauseOnHover: false,
-//   },
-//   // direction: 'ltr',
-//   width: '100vw',
-//   perPage: 2,
-//   perMove: 1,
-//   focus: 'center', // 0 = left and 'center' = center
-//   type: 'loop', // 'loop' or 'slide'
-//   gap: '2.5em', // space between slides
-//   arrows: false, // 'slider' or false
-//   pagination: false, // 'slider' or false
-//   speed: 600, // transition speed in miliseconds
-//   drag: false,
-//   dragAngleThreshold: 30, // default is 30
-//   autoWidth: false, // for cards with differing widths
-//   rewind: false, // go back to beginning when reach end
-//   rewindSpeed: 400,
-//   waitForTransition: false,
-//   updateOnMove: true,
-//   trimSpace: false, // true removes empty space from end of list
-//   // breakpoints: {
-//   //   640: {
-//   //     // height: '6rem',
-//   //   },
-//   // },
-// }).mount(window.splide.Extensions);
-//
-// $('.right_arrow').on('click', function () {
-//   $('.splide__arrow--next').click();
-// });
-// $('.left_arrow').on('click', function () {
-//   $('.splide__arrow--prev').click();
-// });
+for (const face of faces) {
+  TweenMax.from(face, randomNumber(1, 1), {
+    opacity: 0,
+    yoyo: true,
+    delay: randomNumber(1, 100),
+    repeatDelay: randomNumber(10, 100),
+    repeat: -1,
+    ease: Linear.easeNone,
+  });
+}
