@@ -110,8 +110,8 @@ for (const face of faces) {
   TweenMax.from(face, randomNumber(1, 1), {
     opacity: 0,
     yoyo: true,
-    delay: randomNumber(1, 100),
-    repeatDelay: randomNumber(10, 100),
+    delay: randomNumber(1, 80),
+    repeatDelay: randomNumber(5, 70),
     repeat: -1,
     ease: Linear.easeNone,
   });
