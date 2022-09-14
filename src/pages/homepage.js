@@ -1,5 +1,3 @@
-console.log('yo yo');
-
 //Homepage Accordion
 
 const elements = ['.is--creators', '.is--shopers', '.is--nfts', '.is--gamers'];
@@ -107,11 +105,11 @@ function randomNumber(min, max) {
 }
 
 for (const face of faces) {
-  TweenMax.from(face, randomNumber(1, 1), {
-    opacity: 0,
+  TweenMax.to(face, randomNumber(2, 2), {
+    opacity: 1,
     yoyo: true,
-    delay: randomNumber(1, 80),
-    repeatDelay: randomNumber(5, 70),
+    delay: randomNumber(1, 10),
+    repeatDelay: randomNumber(1, 10),
     repeat: -1,
     ease: Linear.easeNone,
   });
