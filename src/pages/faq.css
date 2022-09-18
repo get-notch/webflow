@@ -1,0 +1,8 @@
+.faq-questions_sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.faq-questions_sidebar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

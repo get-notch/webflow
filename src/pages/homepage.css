@@ -1,0 +1,27 @@
+@media screen and (max-width: 479px) {
+  .vertical-text.is--creators.creators-opened,
+  .vertical-text.is--white.gamers-opened,
+  .vertical-text.is--white.is--nfts.nfts-opened {
+    display: block !important;
+  }
+}
+
+.splide__arrow {
+  display: none;
+}
+
+.bubbles_marquee_track {
+  will-change: transform;
+}
+
+/* Marquee */
+ .hp-marquee_track{
+   white-space: nowrap;
+   will-change: transform;
+   animation: marquee 30s linear infinite;
+ }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(50%);}
+}

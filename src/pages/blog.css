@@ -1,0 +1,22 @@
+.w-slider-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 999px;
+  margin-bottom: 0;
+}
+
+.w-slider-dot.w-active {
+  background-color: black;
+}
+
+.blog-tags_menu::-webkit-scrollbar {
+  display: none;
+}
+
+.blog-tags_menu {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
