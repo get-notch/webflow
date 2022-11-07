@@ -140,10 +140,13 @@ if (username) {
   const followersElements = document.querySelectorAll('.followers_number');
   // TODO: add other query selectors
 
+  // Skelton Elements
+  const skeleton = document.querySelectorAll('.skeleton');
+
   // add skeleton class name
-  const skeletonClassName = 'skeleton';
-  addClass(usernameElements, skeletonClassName);
-  addClass(followersElements, skeletonClassName);
+  const skeletonActiveClassName = 'is--active';
+  addClass(skeleton, skeletonActiveClassName);
+  // addClass(followersElements, skeletonClassName);
   // TODO: add other add class
 
   // fetch data
@@ -221,8 +224,8 @@ if (username) {
         }
 
         // remove skeleton class name when done fetching data
-        removeClass(usernameElements, skeletonClassName);
-        removeClass(followersElements, skeletonClassName);
+        removeClass(skeleton, skeletonActiveClassName);
+        // removeClass(followersElements, skeletonClassName);
         // TODO: add other remove class
       }
     );
