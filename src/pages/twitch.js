@@ -12,7 +12,7 @@ window.requestAnimationFrame = (function () {
 
 var $parent = $('#floating-wrapper'),
   $elements = $('.floating-image', $parent),
-  vertSpeed = 3,
+  vertSpeed = 2,
   horiSpeed = 2;
 
 var height = $parent.height(),
@@ -26,7 +26,7 @@ for (var i = 0; i < $elements.length; i++) {
     elementWidth = $element.width(),
     elementHeight = $element.height();
 
-  $element.css('position', 'absolute');
+  $element.css('position', 'absolute').css('display', 'block');
 
   var item = {
     element: $element[0],
