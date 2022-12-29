@@ -1,0 +1,42 @@
+
+.twitter-header_title::after {
+    content: "|";
+    color: #566370;
+    display: inline;
+    animation: blink 0.75s infinite;
+}
+
+.twitter-header_paragraph::after {
+    content: "|";
+    color: #566370;
+    display: inline;
+    animation: blink 0.75s infinite;
+}
+
+.twitter-header_title.no-cursor::after{
+    display: none;
+}
+
+
+
+/* custom cursor animation */
+@keyframes display-none  {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
