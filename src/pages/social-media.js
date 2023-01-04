@@ -38,7 +38,7 @@ $('.is--nfts').on('click', function () {
 });
 
 // Bubbles Testimonials Splide
-let object = {
+let objectx = {
   value: 1,
 };
 
@@ -57,7 +57,7 @@ tl.fromTo(
 
 $('.bubbles_marquee_track').on('mouseenter', function () {
   gsap.fromTo(
-    object,
+    objectx,
     {
       value: 1,
     },
@@ -65,7 +65,7 @@ $('.bubbles_marquee_track').on('mouseenter', function () {
       value: 0,
       duration: 0.5,
       onUpdate: () => {
-        tl.timeScale(object.value);
+        tl.timeScale(objectx.value);
       },
     }
   );
@@ -73,7 +73,7 @@ $('.bubbles_marquee_track').on('mouseenter', function () {
 
 $('.bubbles_marquee_track').on('mouseleave', function () {
   gsap.fromTo(
-    object,
+    objectx,
     {
       value: 0,
     },
@@ -81,7 +81,7 @@ $('.bubbles_marquee_track').on('mouseleave', function () {
       value: 1,
       duration: 0.2,
       onUpdate: () => {
-        tl.timeScale(object.value);
+        tl.timeScale(objectx.value);
       },
     }
   );
